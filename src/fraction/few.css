@@ -1,0 +1,45 @@
+.watchword h1 {
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    line-height: 65px;
+}
+
+.watchword p {
+    color: white;
+    /* font-weight: bold; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25.5px;
+    margin-top: 5px;
+}
+
+.watchword {
+    margin-left: 160px;
+}
+
+.view {
+    display: none;
+}
+
+@media(max-width:884px) {
+    .view {
+        display: block;
+    }
+
+    .watchword {
+        display: none;
+    }
+
+    .view h1 {
+        text-align: center;
+        font-size: 24px;
+        color: white;
+    }
+
+    .view p {
+        text-align: center;
+        font-size: 17px;
+        color: white;
+    }
+}

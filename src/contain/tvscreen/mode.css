@@ -1,0 +1,52 @@
+.hide h1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 59px;
+    line-height: 66px;
+}
+
+.hide p{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.hide {
+    margin-right: 160px;
+    margin-top: 100px;
+}
+
+.visible{
+    display: none;
+}
+
+@media(max-width:884px) {
+    .visible {
+        display: block;
+        padding-top: 34px;
+    }
+
+    .visible h1 {
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 27px;
+        text-align: center;
+    }
+
+    .visible p {
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 19px;
+        text-align: center;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .pt {
+        margin: auto;
+    }
+}

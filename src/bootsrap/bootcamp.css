@@ -1,0 +1,32 @@
+.field-box {
+    position: relative;
+    width: 100%;
+}
+
+.float-labeling {
+    position: absolute;
+}
+
+.field-box input:focus+.float-labeling,
+.field-box input:not(:placeholder-shown)+.float-labeling {
+    transform: translateY(-1.5rem);
+    font-size: 0.875rem;
+    color: #E50914;
+}
+
+.float-labeling {
+    position: absolute;
+    top: 50%;
+    left: 0.75rem;
+    transform: translateY(-50%);
+    transition: transform 0.2s ease, font-size 0.2s ease;
+    pointer-events: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+}
+
+@media(max-width:638px) {
+    .float-labeling {
+        left: 5rem;
+    }
+}

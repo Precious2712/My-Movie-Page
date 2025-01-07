@@ -1,0 +1,29 @@
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.input-container input:focus+.floating-label,
+.input-container input:not(:placeholder-shown)+.floating-label {
+    transform: translateY(-1.5rem);
+    font-size: 0.875rem;
+    color: #E50914;
+}
+
+.floating-label {
+    position: absolute;
+    top: 50%;
+    left: 0.75rem;
+    transform: translateY(-50%);
+    transition: transform 0.2s ease, font-size 0.2s ease;
+    pointer-events: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+}
+
+@media(max-width:638px) {
+    .floating-label {
+        left: 5rem;
+    }
+}

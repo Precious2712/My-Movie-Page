@@ -1,0 +1,46 @@
+.kidshow {
+    display: none;
+}
+
+.kidhide h1 {
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    line-height: 65px;
+}
+
+.kidhide p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22.5px;
+    margin-top: 5px;
+}
+
+.kidhide {
+    margin-top: 65px;
+}
+
+@media(max-width:884px) {
+    .kidhide {
+        display: none;
+    }
+
+    .kidshow {
+        display: block;
+    }
+
+    .kidshow h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        text-align: center;
+        color: white;
+    }
+
+    .kidshow p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        text-align: center;
+        color: white;
+    }
+}
